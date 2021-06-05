@@ -4,8 +4,11 @@ import pandas as pd
 import re
 import requests
 import numpy as np
+from dotenv import load_dotenv
 
 from settings import RAW_DATA_URL, ONEMAP_URL, CORRECTIONS_WORKSHEET_NAME, PLANNING_AREA_WORKSHEET_NAME, MAIN_WORKSHEET_NAME
+
+load_dotenv()
 
 main_df = pd.read_excel(RAW_DATA_URL)
 request_url = ONEMAP_URL

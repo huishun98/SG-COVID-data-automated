@@ -1,8 +1,7 @@
-# If modifying these scopes, delete the file token.json.
-# SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-
-# The ID and range of a sample spreadsheet.
 DEPLOY = True
+
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
+          'https://www.googleapis.com/auth/drive']
 
 SPREADSHEET_ID = '19EPRvGyAMnYZn9LwfFa4UqYrt-MQ94-qEUg76vbl2Gs'
 
