@@ -1,4 +1,6 @@
 # SG COVID-19 Spread Visualisation Data Preparation (Automated)
+![SG COVID-19 Spread Gif](https://raw.githubusercontent.com/huishun98/SG-COVID-data-Automated/master/assets/Singapore%20COVID%20Spread.gif)
+
 This code automates the update of the Google Sheets used in the [Singapore COVID-19 Spread Tableau dashboard](https://public.tableau.com/views/SingaporeCOVIDSpreadBookAutoUpdate/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link).
 
 View the Google Sheets with the updated data [here](https://docs.google.com/spreadsheets/d/19EPRvGyAMnYZn9LwfFa4UqYrt-MQ94-qEUg76vbl2Gs/edit?usp=sharing).
@@ -56,5 +58,5 @@ Other methods tried:
 2. AWS Lambda — This project has many dependencies and deployment and testing on AWS Lambda takes too much time.
 
 ## References
-https://www.jcchouinard.com/python-automation-with-cron-on-mac/
-https://forums.docker.com/t/restart-docker-from-command-line/9420
+- https://www.jcchouinard.com/python-automation-with-cron-on-mac/
+- https://forums.docker.com/t/restart-docker-from-command-line/9420
