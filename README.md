@@ -7,7 +7,7 @@ View the Google Sheets with the updated data [here](https://docs.google.com/spre
 
 The following diagram illustrates how the data preparation is automated:
 
-<img src="https://github.com/huishun98/SG-COVID-data-automated/blob/master/assets/flow-diagram.png?raw=true" height="300" />
+<img src="https://github.com/huishun98/SG-COVID-data-automated/blob/master/assets/flow-diagram.png?raw=true" height="400" />
 
 The blue item involves the code in this repository, while the yellow items refer to the things that have to be done on the local machine.
 
