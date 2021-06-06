@@ -1,11 +1,9 @@
-from __future__ import print_function
-
 from settings import SPREADSHEET_ID, DEPLOY, SCOPES
 from google.oauth2 import service_account
-
 import pygsheets
 from os import getenv
 
+# define service
 class SheetsService():
     def __init__(self) -> None:
         if DEPLOY:

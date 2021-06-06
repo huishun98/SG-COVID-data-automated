@@ -1,29 +1,26 @@
-from oauthlib.oauth2.rfc6749.clients import base
-from sheets import SheetsService
 import pandas as pd
 import re
 import requests
 import numpy as np
 from dotenv import load_dotenv
+from service.sheets import SheetsService
 
 from settings import RAW_DATA_URL, ONEMAP_URL, CORRECTIONS_WORKSHEET_NAME, PLANNING_AREA_WORKSHEET_NAME, MAIN_WORKSHEET_NAME
 
 load_dotenv()
 
-main_df = pd.read_excel(RAW_DATA_URL)
-request_url = ONEMAP_URL
-sheets = SheetsService()
-
 # retrieve required data from google sheets
-address_changes = sheets.getWorksheet(CORRECTIONS_WORKSHEET_NAME)\
-    .get_as_df()\
-    .set_index('Raw')\
-    .to_dict()['Corrected']
+sheets = SheetsService()
+address_changes = sheets.getWorksheet(CORRECTIONS_WORKSHEET_NAME).get_as_df().set_index('Raw').to_dict()['Corrected']
 planning_area_df = sheets.getWorksheet(PLANNING_AREA_WORKSHEET_NAME).get_as_df()
 
+# set global variables
+main_df = pd.read_excel(RAW_DATA_URL)
+request_url = ONEMAP_URL
 baseline = planning_area_df.iloc[0]
 
-def main():
+# data processing
+def processing():
     main_wks = sheets.getWorksheet(MAIN_WORKSHEET_NAME)
 
     # get geocodes
@@ -49,6 +46,7 @@ def main():
 
     main_wks.set_dataframe(main_df,(1,1))
 
+# define helper function
 def find_place(lng, lat):
     result = baseline['Area']
     
@@ -67,4 +65,4 @@ def find_place(lng, lat):
     return result
 
 if __name__ == '__main__':
-    main()
+    processing()
