@@ -1,10 +1,12 @@
 # SG COVID-19 Spread Visualisation Data Preparation (Automated)
 This code automates the update of the Google Sheets used in the [Singapore COVID-19 Spread Tableau dashboard](https://public.tableau.com/views/SingaporeCOVIDSpreadBookAutoUpdate/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link).
 
-## Files
+View the Google Sheets with the updated data [here](https://docs.google.com/spreadsheets/d/19EPRvGyAMnYZn9LwfFa4UqYrt-MQ94-qEUg76vbl2Gs/edit?usp=sharing).
 
+## Files
 ### Main files
-1. start.py — Obtain data from data.world, process data, export to Google Sheets for use in Tableau
+1. start.py — obtains raw data from the [Public Places Visited by Singapore Covid-19 Cases
+dataset](https://query.data.world/s/7baz2qq6fm2f7evlwjxcyqusw6bktk) on data.world, and prepare and export the data to Google Sheets for use in [Tableau visualisation](https://public.tableau.com/views/SingaporeCOVIDSpreadBookAutoUpdate/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
 2. service/sheets.py — Google Sheets Service
 3. settings.py — config for Google Sheets
 4. requirements.txt — required python packages
