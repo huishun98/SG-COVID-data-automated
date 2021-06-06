@@ -1,7 +1,7 @@
 # SG COVID-19 Spread Visualisation Data Preparation (Automated)
 ![SG COVID-19 Spread Gif](https://raw.githubusercontent.com/huishun98/SG-COVID-data-Automated/master/assets/Singapore%20COVID%20Spread.gif)
 
-This code automates the update of the Google Sheets used in the [Singapore COVID-19 Spread Tableau dashboard](https://public.tableau.com/views/SingaporeCOVIDSpreadBookAutoUpdate/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link).
+This code automates the update of the Google Sheets used in the [Singapore COVID-19 Spread Tableau dashboard](https://public.tableau.com/views/SingaporeCOVIDSpreadBookAutoUpdate/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link) using Docker and Crontab on macOS.
 
 View the Google Sheets with the updated data [here](https://docs.google.com/spreadsheets/d/19EPRvGyAMnYZn9LwfFa4UqYrt-MQ94-qEUg76vbl2Gs/edit?usp=sharing).
 
@@ -36,7 +36,7 @@ virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-## Automating the script
+## Automating script execution
 Automate the execution of the script using Docker and Crontab in Mac. 
 
 1. Install [Docker for Mac](https://www.docker.com/products/docker-desktop)
