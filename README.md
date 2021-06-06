@@ -5,6 +5,12 @@ This code automates the update of the Google Sheets used in the [Singapore COVID
 
 View the Google Sheets with the updated data [here](https://docs.google.com/spreadsheets/d/19EPRvGyAMnYZn9LwfFa4UqYrt-MQ94-qEUg76vbl2Gs/edit?usp=sharing).
 
+The following diagram illustrates how the data preparation is automated:
+
+<img src="https://github.com/huishun98/SG-COVID-data-automated/blob/master/assets/flow-diagram.png?raw=true" height="300" />
+
+The blue item involves the code in this repository, while the yellow items refer to the things that have to be done on the local machine.
+
 ## Files
 ### Main files
 1. start.py — obtains raw data from the [Public Places Visited by Singapore Covid-19 Cases
