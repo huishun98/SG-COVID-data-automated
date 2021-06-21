@@ -46,7 +46,7 @@ pip install -r requirements.txt
 Automate the execution of the script using Docker and Crontab in Mac. 
 
 1. Install [Docker for Mac](https://www.docker.com/products/docker-desktop)
-2. Create docker image by running `docker build <custom-image-name> .`
+2. Create docker image by running `docker build -t <custom-image-name> .`
 3. Create shell script to run the docker image
 ```
 #!/bin/bash
